@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./assets/home/background-home-desktop.jpg);
+    font-family: "Bellefair", serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.bar {
+    background-color: white;
+    width: 20px;
+    height: 4px;
+    margin-top: 5px;
+}
+
+.bg-destination {
+    background-image: url(./assets/destination/background-destination-desktop.jpg);
+}
+
+.bg-crew {
+    background-image: url(./assets/crew/background-crew-desktop.jpg);
+}
+
+.bg-tech {
+    background-image: url(./assets/technology/background-technology-desktop.jpg);
+}
+
+.active {
+    border-bottom: 4px solid white;
+
+}
+
+
+
+@media only screen and (max-width: 639px) {
+    body {
+        background-image: url(./assets/home/background-home-mobile.jpg);
+    }
+
+    .bg-destination {
+        background-image: url(./assets/destination/background-destination-mobile.jpg);
+    }
+
+    .bg-crew {
+        background-image: url(./assets/crew/background-crew-mobile.jpg);
+    }
+
+    .bg-tech {
+        background-image: url(./assets/technology/background-technology-mobile.jpg);
+    }
+
+    #navBar {
+        padding: 2rem 2rem 0 0;
+    }
+
+    #mobile-menu-toggle .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    #navItem {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+    body {
+        background-image: url(./assets/home/background-home-tablet.jpg);
+    }
+
+    .bg-destination {
+        background-image: url(./assets/destination/background-destination-tablet.jpg);
+    }
+
+    .bg-crew {
+        background-image: url(./assets/crew/background-crew-tablet.jpg);
+    }
+
+    .bg-tech {
+        background-image: url(./assets/technology/background-technology-tablet.jpg);
+    }
+
+    ul.custom-list {
+        list-style: none;
+    }
+
+    ul.custom-list li::before {
+        list-style: none;
+    }
+}
+
+ul.custom-list li::before {
+    content: none;
+}
+
+@media screen and (min-width: 1024px) {
+    /* body {
+        overflow-y: hidden;
+    } */
+
+
+    .h-index,
+    .h-crew,
+    .h-tech {
+        height: calc(100vh - 145px)
+    }
+
+    .h-destination {
+        height: calc(100vh - 180px)
+    }
+}
+
+@media screen and (min-width: 769px) {
+    ul.custom-list {
+        list-style-type: none;
+        counter-reset: custom-counter -1;
+    }
+
+    ul.custom-list li::before {
+        content: counter(custom-counter, decimal-leading-zero);
+        counter-increment: custom-counter;
+        margin-right: 10px;
+        font-weight: 500;
+    }
+}

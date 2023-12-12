@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="discription" content="A space tourism website" />
+    <title>Space Tourism</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-home">
+    <div id="home-page" class="w-auto">
+      <nav>
+        <div
+          class="flex items-center justify-between lg:mt-4 relative"
+          id="navBar"
+        >
+          <div class="flex items-center ml-8">
+            <img src="./assets/shared/logo.svg" alt="Logo" />
+            <div
+              class="bg-white h-[0.5px] w-[36%] absolute left-44 z-10 lg:block hidden"
+            ></div>
+          </div>
+          <div class="sm:hidden cursor-pointer flex flex-col" id="toggleBtn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="4"
+              >
+                <path d="M7.94971 11.9497H39.9497" />
+                <path d="M7.94971 23.9497H39.9497" />
+                <path d="M7.94971 35.9497H39.9497" />
+              </g>
+            </svg>
+          </div>
+
+          <div
+            class="w-[55%] hidden sm:static absolute right-0 top-0 sm:block bg-white bg-opacity-10 backdrop-blur-2xl"
+            id="navItems"
+          >
+            <ul
+              class="custom-list flex flex-col sm:flex-row items-center justify-center text-white lg:gap-12 gap-5 tracking-[2.3px] text-[14px] lg:text-[16px] select-none"
+              style="font-family: Barlow Condensed"
+            >
+              <li
+                id="homeBtn"
+                class="transition-all active hover:border-b-4 hover:border-white py-7 cursor-pointer"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                id="destinationBtn"
+                class="transition-all hover:border-b-4 border-white py-7 cursor-pointer"
+              >
+                <a href="#">Destination</a>
+              </li>
+              <li
+                id="crewBtn"
+                class="transition-all hover:border-b-4 border-white py-7 cursor-pointer"
+              >
+                <a href="#">Crew</a>
+              </li>
+              <li
+                id="technologyBtn"
+                class="transition-all hover:border-b-4 border-white py-7 cursor-pointer"
+              >
+                <a href="#">Technology</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main id="homeMain" class="w-auto">
+        <section
+          class="w-full h-index flex lg:flex-row flex-col items-center justify-center lg:justify-around mt-28 lg:mt-0"
+        >
+          <div
+            class="lg:w-[35%] w-[85%] text-center lg:text-start flex flex-col justify-center items-start my-5"
+          >
+            <p
+              class="uppercase text-[#D0D6F9] text-[28px] 2xl:text-[35px] tracking-[4.7px] m-auto sm:m-0"
+              style="font-family: Barlow Condensed"
+            >
+              So, you want to travel to
+            </p>
+            <h1
+              class="uppercase text-white text-[80px] sm:text-[150px] 2xl:text-[200px] m-auto sm:ml-[-10px]"
+            >
+              space
+            </h1>
+            <p
+              class="text-[#D0D6F9] text-[18px] 2xl:text-[30px] font-[400] leading-[32px] text-justify"
+              style="font-family: Barlow"
+            >
+              Let's face it; if you want to go space, you as well genuinely go
+              to outer space and not hover kind of on the edge of it. Well sit
+              back, and relax because we'll give you a truly out of this world
+              experience
+            </p>
+          </div>
+          <div
+            id="explore"
+            class="bg-white text-black uppercase h-[12rem] 2xl:h-[16rem] 2xl:w-[16rem] w-[12rem] flex justify-center items-center text-[32px] 2xl:text-[40px] transition-transform hover:scale-105 rounded-full cursor-pointer my-10 lg:my-0 select-none"
+          >
+            explore
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./common.js"></script>
+  </body>
+</html>
